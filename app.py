@@ -33,6 +33,7 @@ app = dash.Dash(
     title="🐾 Resgate de Pets — Ribeirão Preto",
     suppress_callback_exceptions=True,
 )
+server = app.server
 
 # -------------------------------------------------------
 # Paleta — modo CLARO
