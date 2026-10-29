@@ -83,6 +83,10 @@ python app.py
 
 Depois, acesse [http://127.0.0.1:8050](http://127.0.0.1:8050).
 
+### Hospedagem no Render
+
+O projeto inclui `render.yaml` para publicação como Web Service Python. O servidor de produção usa Gunicorn e a porta fornecida pelo ambiente do Render.
+
 Se a API do IBGE estiver indisponível, o projeto usa automaticamente valores locais de contingência para continuar funcionando.
 
 ## Estrutura do projeto
