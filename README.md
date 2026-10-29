@@ -2,6 +2,8 @@
 
 > Projeto desenvolvido para o desafio de hackathon de **Resgate de PETs ou Segurança Pública**.
 
+🌐 **Dashboard público:** [resgate-pets-ribeirao-preto.onrender.com](https://resgate-pets-ribeirao-preto.onrender.com)
+
 ## Apresentação do projeto
 
 O **Team 4** criou um dashboard interativo para visualizar e acompanhar ocorrências de animais em situação de risco em Ribeirão Preto (SP). A solução reúne dados públicos do IBGE com uma base demonstrativa de ocorrências por bairro, sempre identificada como simulada. O painel foi pensado para equipes de resgate, organizações de proteção animal, poder público e cidadãos que precisem identificar regiões e casos prioritários. Na prática, os usuários aplicam filtros por zona, bairro, espécie e status para acompanhar indicadores, comparar áreas e apoiar a organização das ações de resgate.
