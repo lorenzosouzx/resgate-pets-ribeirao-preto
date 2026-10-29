@@ -22,6 +22,7 @@ O dashboard transforma os registros em uma visão operacional com:
 
 - indicadores de ocorrências, resgates, tratamentos e adoções;
 - filtros interativos por zona, bairro, espécie e status;
+- alternância entre os modos claro e escuro;
 - gráficos por bairro, zona, espécie, situação e andamento;
 - tabela detalhada, filtrável e ordenável;
 - contexto regional obtido pela API pública do IBGE;
