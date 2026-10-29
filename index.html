@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard público do Team 4 para visualização de ocorrências de resgate animal em Ribeirão Preto.">
+  <meta name="theme-color" content="#0d3d7a">
+  <title>Resgate Pets — Ribeirão Preto</title>
+  <link rel="preconnect" href="https://cdn.plot.ly" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">TEAM 4 · HACKATHON</p>
+      <h1>🐾 Resgate de Pets</h1>
+      <p>Ribeirão Preto · dados municipais via IBGE · ocorrências demonstrativas</p>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema">🌙 Modo escuro</button>
+  </header>
+
+  <main>
+    <section class="notice" aria-label="Transparência dos dados">
+      <strong>Transparência:</strong> informações municipais são públicas; ocorrências por bairro são simuladas e reproduzíveis para demonstrar a solução.
+    </section>
+
+    <section class="filters" aria-label="Filtros do dashboard">
+      <label>Zona<select id="zona"></select></label>
+      <label>Bairro<select id="bairro"></select></label>
+      <label>Espécie<select id="especie"></select></label>
+      <label>Status<select id="status"></select></label>
+      <button id="clear" type="button">Limpar filtros</button>
+    </section>
+
+    <section id="kpis" class="kpis" aria-label="Indicadores principais"></section>
+
+    <section class="about card">
+      <div>
+        <p class="eyebrow blue">NOSSA MISSÃO</p>
+        <h2>Dados para apoiar decisões de resgate</h2>
+        <p>Uma visão simples para equipes de resgate, ONGs, gestores públicos e cidadãos identificarem concentrações de ocorrências e acompanharem resultados.</p>
+      </div>
+      <div class="channels">
+        <span>👥 Comunidade</span><span>🏠 ONGs</span><span>🚒 Bombeiros</span><span>🏛️ DBEA</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="card"><h2>Ocorrências por bairro</h2><div id="chart-bairros" class="chart"></div></article>
+      <article class="card"><h2>Ocorrências por zona</h2><div id="chart-zonas" class="chart"></div></article>
+    </section>
+    <section class="grid three">
+      <article class="card"><h2>Espécies</h2><div id="chart-especies" class="chart small"></div></article>
+      <article class="card"><h2>Status</h2><div id="chart-status" class="chart small"></div></article>
+      <article class="card"><h2>Situações</h2><div id="chart-situacoes" class="chart small"></div></article>
+    </section>
+
+    <section class="card table-card">
+      <div class="table-title"><div><p class="eyebrow blue">REGISTROS</p><h2>Ocorrências filtradas</h2></div><span id="result-count"></span></div>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>Bairro</th><th>Zona</th><th>Espécie</th><th>Situação</th><th>Status</th></tr></thead><tbody id="records"></tbody></table></div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Team 4</strong> · Pedro Henrique Tunis de Paula Leão · Brenda Azevedo da Silva · Lorenzo de Souza Machado
+    <small>Protótipo educacional. Não substitui canais oficiais de denúncia ou emergência.</small>
+  </footer>
+</body>
+</html>
+
